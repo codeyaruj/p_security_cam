@@ -2,12 +2,10 @@
 A production-ready Python application for intelligent face recognition using your PC's webcam. The system detects and identifies faces in real-time, displaying green bounding boxes for registered individuals and red boxes for unknown persons.
 
 ## Features
-
 ✅ **Real-time face detection and recognition**
 - Detects multiple faces simultaneously
 - Green bounding boxes for registered faces
 - Red bounding boxes for unknown faces
-
 ✅ **Intelligent capture system** (anti-spam)
 - Captures unknown face **only once** when first detected
 - Additional captures (max 2-3) only triggered by:
@@ -15,12 +13,10 @@ A production-ready Python application for intelligent face recognition using you
   - Face leaving and re-entering the frame
 - Built-in cooldown prevents duplicate captures
 - Automatic cleanup of stale tracking data
-
 ✅ **Performance optimized**
 - Frame downscaling for faster processing
 - Efficient encoding comparisons
 - Smooth real-time display
-
 ✅ **Statistics and monitoring**
 - Live frame counter
 - Registered vs. unknown face counts
@@ -28,11 +24,10 @@ A production-ready Python application for intelligent face recognition using you
 - Press 's' during runtime for detailed stats
 
 ## Prerequisites
-
 - Python 3.7 or higher
 - Webcam (built-in or USB)
 - Linux, macOS, or Windows
-
+- 
 ## Installation
 
 ### 1. Install Dependencies
@@ -236,7 +231,6 @@ The system is organized into modular components:
 ## Privacy & Ethics
 
 ⚠️ **Important considerations:**
-
 - This system captures images of people without explicit notification
 - Ensure compliance with local privacy laws and regulations
 - Use only in appropriate contexts (home security, authorized access control)
@@ -246,7 +240,6 @@ The system is organized into modular components:
 ## Extending the System
 
 ### Add Audio Alerts
-
 ```python
 import winsound  # Windows
 # or
@@ -259,7 +252,6 @@ if name == "Unknown Face" and should_capture:
 ```
 
 ### Log to CSV
-
 ```python
 import csv
 from datetime import datetime
@@ -271,7 +263,6 @@ with open('capture_log.csv', 'a', newline='') as f:
 ```
 
 ### Database Integration
-
 Replace file-based storage with SQL:
 
 ```python
@@ -282,12 +273,7 @@ conn = sqlite3.connect('faces.db')
 # Store encodings, timestamps, etc.
 ```
 
-## License
-
-This code is provided as-is for educational and personal use. Ensure compliance with local laws regarding surveillance and biometric data collection.
-
 ## Support
-
 For issues or questions:
 1. Check the Troubleshooting section above
 2. Verify all dependencies are correctly installed
@@ -295,7 +281,6 @@ For issues or questions:
 4. Test with different lighting conditions and camera angles
 
 ## Credits
-
 Built using:
 - OpenCV for video capture and display
 - face_recognition library (dlib-based) for face detection and encoding
